@@ -13,18 +13,15 @@ void yellow_on(void);
 int main()
 {
     void (*ptr[NUM_OF_STATE])(void) = {red_on,yellow_on,green_on};
-    int press=0;
-   printf("Press To Start The Finit State machine \n");
-   scanf("%d",&press);
+    int i=0 ;
 
-  while(press)
+  while(1)
   {
-      for(int i =0 ;i<=NUM_OF_STATE;i++)
-      {
-          printf("now \n");
-        ptr[i]  ;
+   ptr[i]();
+   i++;
+   if(i==NUM_OF_STATE)
+    i=0;
 
-      }
   }
     return 0;
 }
@@ -32,13 +29,13 @@ int main()
 
 void red_on(void)
 {
-    printf("Red is On and green of and yellow off");
+    printf("Red is On and green of and yellow off\n");
 }
 void green_on(void)
 {
-    printf("Red is On and green oon and yellow off");
+    printf("Red is On and green on and yellow off\n");
 }
 void yellow_on(void)
 {
-    printf("Red is On and green oon and yellow on");
+    printf("Red is On and green on and yellow on\n");
 }
