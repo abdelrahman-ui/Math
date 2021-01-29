@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define F_CPU 16000000UL
-#include <avr/io.h>
-#include <util/delay.h>
+
 #define  Ture  1
 #define  False 0
 
@@ -28,15 +26,6 @@ int main(void)
         Pop();
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
