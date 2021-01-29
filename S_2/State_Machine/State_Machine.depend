@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1611878420 source:e:\embedded_abdelrahman_magdy\ahmed_tolba\s_2\state_machine\main.c
+	<stdio.h>
+	<stdlib.h>
+
